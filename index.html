@@ -13,6 +13,7 @@
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media.css">
     <title>WebStudio</title>
 </head>
 
@@ -20,6 +21,10 @@
     <!-- header -->
     <header class="header-border">
         <div class="container main-nav">
+            <!-- button -->
+
+            
+            <!-- my code -->
             <nav class="main-nav">
                 <a href="./index.html" class="logo">Web<span class="span-logo-up">Studio</span>
                 </a>
@@ -39,13 +44,21 @@
             <address class="address-contacts">
                 <ul class="contacts-list">
                     <li class="contact">
-                        <a href="mailto:info@devstudio.com" class="mail-phone link">info@devstudio.com</a>
+                        <a href="mailto:info@devstudio.com" class="mail-phone mail link">info@devstudio.com</a>
                     </li>
                     <li class="contact">
-                        <a href="tel:+110001111111" class="mail-phone link">+11 (000) 111-11-11</a>
+                        <a href="tel:+110001111111" class="mail-phone phone link">+11 (000) 111-11-11</a>
                     </li>
                 </ul>
             </address>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            
         </div>
     </header>
 
@@ -153,7 +166,8 @@
                 <!-- Mark card -->
                 <ul class="list our">
                     <li class="floor">
-                        <img src="./images/section3/Mark.jpg" alt="Mark" width="264">
+                        <img srcset="./images/section3/mark.jpg 1x, ./images/section3/mark@2x.jpg 2x"
+                        src="./images/section3/mark.jpg" alt="Mark" width="264">
                         <div class="card-content">
                             <h3 class="title">Mark Guerrero</h3>
                             <p class="text">Product Designer</p>
@@ -192,7 +206,8 @@
                     </li>
                     <!-- Tom card -->
                     <li class="floor">
-                        <img src="./images/section3/Tom.jpg" alt="Tom" width="264">
+                        <img srcset="./images/section3/tom.jpg 1x, ./images/section3/tom@2x.jpg 2x"
+                        src="./images/section3/tom.jpg" alt="Tom" width="264">
                         <div class="card-content">
                             <h3 class="title">Tom Ford</h3>
                             <p class="text">Frontend Developer</p>
@@ -226,7 +241,8 @@
                     </li>
                     <!-- Camila card -->
                     <li class="floor">
-                        <img src="./images/section3/Camila.jpg" alt="Camila" width="264">
+                        <img srcset="./images/section3/camila.jpg 1x, ./images/section3/camila@2x.jpg 2x"
+                        src="./images/section3/camila.jpg" alt="Camila" width="264">
                         <div class="card-content">
                             <h3 class="title">Camila Garcia</h3>
                             <p class="text">Marketing</p>
@@ -260,7 +276,8 @@
                     </li>
                     <!-- Daniel card -->
                     <li class="floor">
-                        <img src="./images/section3/Daniel.jpg" alt="Daniel" width="264">
+                        <img srcset="./images/section3/daniel.jpg 1x, ./images/section3/daniel@2x.jpg 2x"
+                        src="./images/section3/daniel.jpg" alt="Daniel" width="264">
                         <div class="card-content">
                             <h3 class="title">Daniel Wilson</h3>
                             <p class="text">UI Designer</p>
@@ -396,7 +413,7 @@
                 <p class="footer-media-p">Subscribe</p>
                 <form class="footer-form">
                     <label class="footer-label">
-                       
+
                         <input class="footer-input" type="email" name="subscribe" placeholder="E-mail" />
                     </label>
                     <button class="button-sub" type="submit">Subscribe
@@ -458,9 +475,10 @@
                 </div>
                 <!-- checkbox -->
                 <div class="form-checkbox">
-                    <input type="checkbox" class="visually-hidden cb-active" name="user-privacy" value="true" id="user-privacy">
+                    <input type="checkbox" class="visually-hidden cb-active" name="user-privacy" value="true"
+                        id="user-privacy">
                     <label for="user-privacy" class="form-label">
-                        
+
                         <span class="modal-licence-accent">
                             <svg class="modal-svg-check" width="10" height="8">
                                 <use href="./images/icons.svg#icon-checkbox"></use>
@@ -477,7 +495,75 @@
         </div>
 
     </div>
+    <!--  button menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="close-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+        </button>
 
+        <ul class="mobiles-menu">
+            <li class="">
+                <a href="./index.html" class="menu-list-link accent ">Studio</a>
+            </li>
+            <li class="">
+                <a href="./portfolio.html" class="menu-list-link ">Portfolio</a>
+            </li>
+            <li class="">
+                <a href="" class="menu-list-link ">Contacts</a>
+            </li>
+           
+        </ul>
+       
+            <ul class="contacts-list-mobile">
+                <li class="contact-menu">
+                    <a href="tel:+110001111111" class="menu-phone link">+11 (000) 111-11-11</a>
+                </li>
+                <li class="contact-menu">
+                    <a href="mailto:info@devstudio.com" class="menu-mail link">info@devstudio.com</a>
+                </li>
+                
+            </ul>
+        
+        <ul class="section-team-svg mob-menu">
+            <li class="section-team-items">
+                <a href="" class="section-team-link">
+                    <svg class="section-team-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+
+            </li>
+            <li class="section-team-items">
+                <a href="" class="section-team-link">
+                    <svg class="section-team-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="section-team-items">
+                <a href="" class="section-team-link">
+                    <svg class="section-team-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="section-team-items">
+                <a href="" class="section-team-link">
+                    <svg class="section-team-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <!-- js script -->
     <script src="./js/modal.js"></script>
 </body>
 
