@@ -242,6 +242,10 @@
   .menu-phone {
     font-size: 20px;
   }
+  .section-team-svg.mob-menu {
+    gap: 0;
+    justify-content: space-between;
+}
 }
 
 /*--------------- Tablet------------------ */
