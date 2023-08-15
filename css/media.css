@@ -1,11 +1,9 @@
 /* -------------Mobile--------------------- */
-@media (max-width: 767px) {
-  .container {
-    min-width: 320px;
-    max-width: 396px;
-    padding: 0 16px;
-  }
+@media (min-width: 320px) and (max-width: 767px) {
   /* header */
+  .container.main-nav {
+
+  }
   .nav-list {
     display: none;
   }
@@ -24,7 +22,7 @@
   .section-one {
     padding: 112px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/background-image@2x.jpg);
+      url(../images/background-image@2x.jpg);
     height: 432px;
     flex-shrink: 0;
   }
@@ -39,6 +37,9 @@
   /* section 2 */
   .section.features {
     padding: 96px 0;
+  }
+  .container.ftrs {
+
   }
   .section-list {
     display: inline-flex;
@@ -102,6 +103,7 @@
   .our-team {
     padding: 96px 0;
   }
+
   /* section 5 */
   .customers {
     padding: 96px 0;
@@ -128,6 +130,7 @@
   }
   .form-container-footer {
     margin-left: 0;
+    margin-top: 72px;
   }
   .footer-form {
     display: flex;
@@ -156,7 +159,7 @@
   .down {
     margin-bottom: 72px;
   }
-  .section-team-items {
+  .section-team-items.mob {
     margin-bottom: 72px;
   }
   .modal {
@@ -167,7 +170,9 @@
 
   /* Mobile menu */
   .menu-container {
+    display: flex;
     padding: 80px 30px 40px 40px;
+    flex-direction: column;
   }
   .mobiles-menu {
     display: inline-flex;
@@ -187,7 +192,7 @@
     text-decoration: none;
   }
   .contacts-list-mobile {
-    margin-top: 284px;
+    margin-top: auto;
     margin-bottom: 48px;
     display: flex;
     gap: 40px;
@@ -219,18 +224,28 @@
     justify-content: flex-start;
   }
   .menu-list-link.accent {
-    color: var(--ocean, #404BBF);
+    color: var(--ocean, #404bbf);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 427px) {
+  .modal {
+    width: 95%;
+    padding: 72px 16px 24px 16px;
+  }
+  .nav-list {
+    display: none;
+  }
+  .contacts-list {
+    display: none;
+  }
+  .menu-phone {
+    font-size: 20px;
   }
 }
 
 /*--------------- Tablet------------------ */
 @media (min-width: 768px) and (max-width: 1157px) {
-  .container {
-    min-width: 552px;
-    max-width: 1157px;
-    padding: 0 16px;
-  }
-
   .menu-toggle.js-open-menu {
     display: none;
   }
@@ -259,9 +274,8 @@
     padding: 112px 0;
     flex-shrink: 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/background-image@2x.jpg);
+      url(../images/background-image@2x.jpg);
   }
- 
 
   /* section 2 */
   .section.features {
