@@ -18,6 +18,38 @@
   .js-open-menu {
     padding: 16px 0;
   }
+  .menu-toggle.js-close-menu {
+    display: flex;
+    fill: #E7E9FC;
+    background-color: #E7E9FC;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    transition: transform 250ms;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-toggle {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  }
   /* hero */
   .section-one {
     padding: 112px 0;
@@ -250,19 +282,7 @@
     justify-content: space-between;
 }
 /* Burger button */
-.menu-toggle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  border-radius: 50%;
-  outline: none;
-}
 
 
 }
