@@ -103,7 +103,10 @@
   .our-team {
     padding: 96px 0;
   }
-
+  .title.title-mobile {
+    font-size: 20px;
+  }
+ 
   /* section 5 */
   .customers {
     padding: 96px 0;
@@ -246,6 +249,22 @@
     gap: 0;
     justify-content: space-between;
 }
+/* Burger button */
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+
 }
 
 /*--------------- Tablet------------------ */
@@ -347,6 +366,9 @@
   .our-team {
     padding: 96px 0;
   }
+  .section-team-items {
+    margin-bottom: 0px;
+}
   /* section 5 */
   .customers {
     padding: 96px 0;
@@ -383,6 +405,7 @@
     display: flex;
     flex-direction: column;
     margin: 0;
+    margin-bottom: 72px;
   }
   .social-media {
     display: flex;
@@ -393,10 +416,8 @@
   .logo.foot {
     margin-bottom: 18px;
   }
-  .down {
-    margin-bottom: 72px;
-  }
-  .section-team-items {
+  
+  .section-team-items.tablet {
     margin-bottom: 72px;
   }
   .form-container-footer {
@@ -414,6 +435,7 @@
   .menu-toggle.js-open-menu {
     display: none;
   }
+ 
   .mobile-menu {
     display: none;
   }

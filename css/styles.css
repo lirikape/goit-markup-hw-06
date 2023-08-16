@@ -239,7 +239,9 @@ body {
 .section.features {
   padding: 120px 0;
 }
-
+.list.section-list{
+gap: 24px;
+}
 .section-list {
   display: flex;
 }
@@ -248,9 +250,6 @@ body {
   width: calc((100% - 72px) / 4);
 }
 
-.section-list .item:not(:last-child) {
-  margin-right: 24px;
-}
 
 .title {
   margin-bottom: 8px;
@@ -806,19 +805,7 @@ input:focus + .modal-svg {
   text-decoration: underline;
 }
 
-.menu-toggle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  border-radius: 50%;
-  outline: none;
-}
 /* next part */
 .menu-toggle:hover,
 .menu-toggle:focus {
