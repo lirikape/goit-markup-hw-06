@@ -1,9 +1,6 @@
 /* -------------Mobile--------------------- */
 @media (min-width: 320px) and (max-width: 767.98px) {
   /* header */
-  .container.main-nav {
-
-  }
   .nav-list {
     display: none;
   }
@@ -21,8 +18,8 @@
 
   .menu-toggle.js-close-menu {
     display: flex;
-    fill: #E7E9FC;
-    background-color: #E7E9FC;
+    fill: #e7e9fc;
+    background-color: #e7e9fc;
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -40,16 +37,16 @@
   }
   .menu-toggle {
     display: flex;
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
 
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  border-radius: 50%;
-  outline: none;
+    margin: 0;
+    padding: 16px 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
   }
   /* hero */
   .section-one {
@@ -72,7 +69,6 @@
     padding: 96px 0;
   }
   .container.ftrs {
-
   }
   .section-list {
     display: inline-flex;
@@ -139,7 +135,7 @@
   .title.title-mobile {
     font-size: 20px;
   }
- 
+
   /* section 5 */
   .customers {
     padding: 96px 0;
@@ -262,6 +258,37 @@
   .menu-list-link.accent {
     color: var(--ocean, #404bbf);
   }
+  /* Portfolio */
+  .list.tabb-but {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 48px;
+  }
+  .button-all {
+    padding: 8px 16px;
+  }
+  .list.tabl-card {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .li-card {
+    width: 100%;
+  }
+  .porftolio-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+    letter-spacing: 0.4px;
+    text-align: inherit;
+  }
+  .text-portfolio {
+    font-weight: 400;
+  }
+  .tabble {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  
 }
 
 @media (min-width: 320px) and (max-width: 427px) {
@@ -281,11 +308,7 @@
   .section-team-svg.mob-menu {
     gap: 0;
     justify-content: space-between;
-}
-/* Burger button */
-
-
-
+  }
 }
 
 /*--------------- Tablet------------------ */
@@ -389,7 +412,7 @@
   }
   .section-team-items {
     margin-bottom: 0px;
-}
+  }
   /* section 5 */
   .customers {
     padding: 96px 0;
@@ -437,7 +460,7 @@
   .logo.foot {
     margin-bottom: 18px;
   }
-  
+
   .section-team-items.tablet {
     margin-bottom: 72px;
   }
@@ -449,6 +472,31 @@
     width: 392px;
     padding: 72px 16px 24px 16px;
   }
+  /* Portfolio */
+  .list.tabb-but {
+    margin-bottom: 64px;
+  }
+
+  .li-card {
+    width: calc((100% - 48px) / 2);
+  }
+  .porftolio-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+    letter-spacing: 0.4px;
+    text-align: inherit;
+  }
+  .text-portfolio {
+    font-weight: 400;
+  }
+  .tabble {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+  .link.mob-img {
+    width: 100%;
+  }
 }
 
 /*--------------- Desktop------------------ */
@@ -456,7 +504,7 @@
   .menu-toggle.js-open-menu {
     display: none;
   }
- 
+
   .mobile-menu {
     display: none;
   }
