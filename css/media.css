@@ -15,7 +15,6 @@
   .js-open-menu {
     padding: 16px 0;
   }
-
   .menu-toggle.js-close-menu {
     display: flex;
     fill: #e7e9fc;
@@ -67,8 +66,6 @@
   /* section 2 */
   .section.features {
     padding: 96px 0;
-  }
-  .container.ftrs {
   }
   .section-list {
     display: inline-flex;
@@ -230,8 +227,6 @@
     gap: 40px;
     flex-direction: column;
   }
-  .contact-menu {
-  }
   .menu-phone {
     color: var(--iris, #4d5ae5);
     font-family: Roboto;
@@ -288,7 +283,6 @@
     padding-top: 48px;
     padding-bottom: 48px;
   }
-  
 }
 
 @media (min-width: 320px) and (max-width: 427px) {
